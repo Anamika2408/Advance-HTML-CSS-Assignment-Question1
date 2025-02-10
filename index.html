@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class=".header">
+        <nav>
+            <div class="left-nav">TO THE NEW</div>
+            <div class="right-nav">
+              <a href="#">Home</a>
+              <a href="#">Quick Help</a>
+            </div>
+          </nav>
+    </header>
+    <main class="container">
+        <form>
+            <div class="form-heading"><h1>Bug Report</h1></div>
+            <div class="form-body">
+                   <div class="item"><label for="Title">Title:<span class="required">*</span></label><br>
+                    <input type="text" id="Title" name="title"> <br></div> 
+                    <div class="item"> <label for="Description">Description:<span class="required">*</span></label><br>
+                    <textarea id="Description" name="description" rows="4" cols="50"></textarea><br></div>
+                    <div class="item"> <label for="Operating-System">Operating System:</label><br>
+                    <select name="operating-system" >
+                        <option value="windows XP">Windows XP</option>
+                        <option value="windows 11">Windows 11</option>
+                        <option value="ubuntu">Ubuntu</option>
+                        <option value="macos">macOS</option>
+                    </select><br></div>
+                    <div class="item"> <label for="Product">Product:<span class="required">*</span></label><br>
+                    <select name="product">
+                        <option value="Formoid">Formoid</option>
+                        <option value="Googleforms">Google Forms</option>
+                        <option value="Typeforms">Type Forms</option>
+                        <option value="Jotforms">Jot Forms</option>
+                    </select><br></div>
+                    <div class="item"><label for="Version">Version:<span class="required">*</span></label><br>
+                    <input type="text" id="Version" name="version"> <br></div>
+                    <div class="item"><label for="License">License:</label><br>
+                       <input type="radio" name="License" value="free" id="free">  
+                       <label for="free">Free</label>
+                        <input type="radio" name="License" value="business" id="business">
+                        <label for="business">Business</label></div>
+                    <div class="item"><label for="Severity">Severity:</label><br>
+                    <select name="severity">
+                        <option value="Critical">Critical</option>
+                        <option value="High">High</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Mild">Mild</option>
+                    </select><br></div>
+                    <div class="item"><label for="Attachments">Attachments:</label><br>
+                    <input type="file" id="Attachments" name="attachment" ></div>
+            <div class="form-footer">
+                <button type="send" class="btn">Send</button>    
+            </div>
+        </div>
+        </form>
+    </main>
+</body>
+</html>
